@@ -52,6 +52,15 @@ public class SmallestPositiveIntegerTest {
 
     @Test
     public void testScenario6() {
+        Integer[] arrayA = {-1000, 50, 100, 1, 2, 10};
+
+        Integer returnedInt = SmallestPositiveIntegerOrrot.findSmallestPositiveInteger(arrayA); // my method here;
+
+        assertThat(returnedInt).isEqualTo(3);
+    }
+
+    @Test
+    public void testScenario7() {
         Integer[] arrayA = {0};
 
         Integer returnedInt = SmallestPositiveIntegerOrrot.findSmallestPositiveInteger(arrayA); // my method here;
